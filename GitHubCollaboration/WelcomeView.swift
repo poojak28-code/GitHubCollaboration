@@ -10,10 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         
-        ZStack {
-            Color.green
-                .ignoresSafeArea()
-        }
+    
             VStack {
                 Text("Welcome to")
                     .font(.largeTitle)
@@ -34,12 +31,18 @@ struct WelcomeView: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.black)
+                            .navigationTitle("Home")
+                            .navigationBarTitleDisplayMode(.inline)
+                            .navigationBarHidden(true)
                     }
                     NavigationLink(destination: BrandDirectoryView()) {
                         Text("Brand Directory")
                             .font(.title3)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.black)
+                            .navigationTitle("Home")
+                            .navigationBarTitleDisplayMode(.inline)
+                            .navigationBarHidden(true)
                     }
                     NavigationLink(destination: HelpView()) {
                         Text("Help")

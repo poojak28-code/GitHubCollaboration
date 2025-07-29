@@ -9,14 +9,19 @@ import SwiftUI
 
 struct AboutUsView: View {
     var body: some View {
-        
+        VStack {
             Text("About Us")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-        Spacer()
-        
-        VStack {
-            
+            Image("nature")
+                .resizable()
+                .frame(width: 380.0, height: 200.0)
+                .cornerRadius(15)
+                .padding()
+            Text("🌿Greenly is an organization that aims to promote sustainability and environmental conservation. We believe that everyone can take part in helping our environment by adopting small eco-freindly practices in their daily lifes. Our main focus is helping consumers use eco-friendly clothing brands, by providing them with research and ratings, in addition to more eco-friendly alternatives to their current clothing choices. ")
+                .font(.body)
+                .fontWeight(.regular)
+                .padding()
                 
         }
     }
