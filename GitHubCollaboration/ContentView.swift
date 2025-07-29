@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var firstname: String = ""
-    @State private var lastname: String = ""
+    @State private var username: String = ""
+    @State private var password: String = ""
     @State private var textTitle = "🌿 Greenly"
     @State private var presentAlert = false
     var body: some View {
@@ -17,22 +17,22 @@ struct ContentView: View {
                 ZStack{
                     Color.green
                         //.edgesIgnoringSafeArea(.all)
-                        .ignoresSafeArea()
+                        .ignoresSafeArea(.all)
                 VStack {                Text(textTitle)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding()
-                    TextField("username",text:$firstname)
+                    TextField("username",text:$username)
                         .multilineTextAlignment(.center)
                         .font(.title)
-                       // .border(Color.white, width:1)
-                        //.background(Color.white)
+                        .border(Color.white, width:1)
+                        .background(Color.white)
                         .cornerRadius(15)
-                    TextField("password ",text:$lastname)
+                    TextField("password",text:$password)
                         .multilineTextAlignment(.center)
                         .font(.title)
-                        //.border(Color.white, width:1)
-                        //.background(Color.white)
+                        .border(Color.white, width:1)
+                        .background(Color.white)
                         .cornerRadius(15)
                     NavigationLink(destination: WelcomeView()) {
                         Text("sign in")
@@ -44,8 +44,7 @@ struct ContentView: View {
                 
             }
         }
-                .padding()
-                
+        
             
         }
     }

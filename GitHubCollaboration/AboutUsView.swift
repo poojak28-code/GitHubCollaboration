@@ -13,6 +13,7 @@ struct AboutUsView: View {
             Text("About Us")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .padding()
             Image("nature")
                 .resizable()
                 .frame(width: 380.0, height: 200.0)
