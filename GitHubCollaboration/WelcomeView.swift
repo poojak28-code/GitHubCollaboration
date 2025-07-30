@@ -26,7 +26,7 @@ struct WelcomeView: View {
             NavigationStack {
                 VStack {
                     NavigationLink(destination: AboutUsView()) {
-                        Button("About Us" ){
+                            Button("About Us" ){
                                         }
                                         .font(.title3)
                                         .padding()
@@ -35,7 +35,7 @@ struct WelcomeView: View {
                                         .cornerRadius(10)
                     }
                     NavigationLink(destination: BrandDirectoryView()) {
-                        Button("Brand Directory" ){
+                            Button("Brand Directory" ){
                                         }
                                         .font(.title3)
                                         .padding()
@@ -44,7 +44,7 @@ struct WelcomeView: View {
                                         .cornerRadius(10)
                     }
                     NavigationLink(destination: HelpView()) {
-                        Button("Help" ){
+                            Button("Help" ){
                                         }
                                         .font(.title3)
                                         .padding()
