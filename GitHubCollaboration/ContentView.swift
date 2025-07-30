@@ -13,11 +13,11 @@ struct ContentView: View {
     @State private var textTitle = "🌿 Greenly"
     @State private var presentAlert = false
     var body: some View {
-            NavigationStack{
-                ZStack{
-                    Color.green
-                        //.edgesIgnoringSafeArea(.all)
-                        .ignoresSafeArea(.all)
+        NavigationStack{
+            ZStack{
+                Color.clear
+                    .background(Color(red:0.741, green:0.922, blue:0.706))
+                    .ignoresSafeArea(.all)
                 VStack {                Text(textTitle)
                         .font(.largeTitle)
                         .fontWeight(.bold)
@@ -41,15 +41,13 @@ struct ContentView: View {
                             .navigationBarHidden(true)
                     }
                 }
-                
             }
-        }
-        
             
         }
+        
     }
-
-
+}
 #Preview {
 ContentView()
 }
+
