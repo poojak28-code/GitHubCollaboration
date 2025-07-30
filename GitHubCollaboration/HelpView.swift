@@ -9,7 +9,29 @@ import SwiftUI
 
 struct HelpView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Image("plant")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 250.0, height: 250.0)
+                    .padding(.top, -350.0)
+            }
+            
+            Text("Help")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.top, -150.0)
+                
+            
+            Text("Contact")
+            Text("greenlycustomerservice@gmail.com")
+            Text("for help")
+            
+            Image("plant 1")
+                .padding(.bottom)
+              
+        }
     }
 }
 
