@@ -28,9 +28,13 @@ struct HelpView: View {
             Text("greenlycustomerservice@gmail.com")
             Text("for help")
             
-            Image("plant 1")
-                .padding(.bottom)
-              
+            HStack {
+                Image("plant 1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 250.0, height: 250.0)
+                    .padding(.bottom, -5000.0)
+            }
         }
     }
 }
