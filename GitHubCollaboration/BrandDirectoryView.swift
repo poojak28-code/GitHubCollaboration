@@ -9,10 +9,38 @@ import SwiftUI
 
 struct BrandDirectoryView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Brands")
+            .font(.title3)
+            .fontWeight(.bold)
+        Spacer()
+        NavigationStack{
+            VStack{
+                NavigationLink(destination: SheinView()) {
+                    Text("SHEIN")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.black)
+                }
+                NavigationLink(destination: LuluView()){
+                    Text("Lululemon")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.black)
+                }
+                NavigationLink(destination: NikeView()){
+                    Text("Nike")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.black)
+                
+                }
+            }
+            
+        }
     }
+    
 }
-
-#Preview {
-    BrandDirectoryView()
-}
+    
+    #Preview {
+        BrandDirectoryView()
+    }

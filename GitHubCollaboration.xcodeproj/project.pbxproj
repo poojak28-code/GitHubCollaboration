@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		71124A1B2E3A989C000D2BC7 /* LuluView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71124A1A2E3A989C000D2BC7 /* LuluView.swift */; };
+		71124A1D2E3A9AAB000D2BC7 /* NikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71124A1C2E3A9AAA000D2BC7 /* NikeView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		203AC1B52E39380D00DD1673 /* GitHubCollaboration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubCollaboration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71124A1A2E3A989C000D2BC7 /* LuluView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuluView.swift; sourceTree = "<group>"; };
+		71124A1C2E3A9AAA000D2BC7 /* NikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +39,8 @@
 		203AC1AC2E39380D00DD1673 = {
 			isa = PBXGroup;
 			children = (
+				71124A1C2E3A9AAA000D2BC7 /* NikeView.swift */,
+				71124A1A2E3A989C000D2BC7 /* LuluView.swift */,
 				203AC1B72E39380D00DD1673 /* GitHubCollaboration */,
 				203AC1B62E39380D00DD1673 /* Products */,
 			);
@@ -119,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71124A1D2E3A9AAB000D2BC7 /* NikeView.swift in Sources */,
+				71124A1B2E3A989C000D2BC7 /* LuluView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
