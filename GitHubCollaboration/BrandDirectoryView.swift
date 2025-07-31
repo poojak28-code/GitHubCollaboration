@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BrandDirectoryView: View {
     var body: some View {
+
         ZStack{
             Color.clear
                 .background(Color(red:0.741, green:0.922, blue:0.706))
@@ -80,9 +81,12 @@ struct BrandDirectoryView: View {
                     }
                 }
             }
+
         }
     }
+    
 }
-#Preview {
-    BrandDirectoryView()
-}
+    
+    #Preview {
+        BrandDirectoryView()
+    }
