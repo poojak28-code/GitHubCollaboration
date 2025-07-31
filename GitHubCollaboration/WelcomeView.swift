@@ -9,52 +9,59 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-        
+
         ZStack {
-            Color.green
-                .ignoresSafeArea()
-        }
-            VStack {
-                Text("Welcome to")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                Text("Greenly!")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-            }
-            .padding()
-            .padding()
-            .padding()
-            .padding()
-            Spacer()
+            Color.clear
+                      .background(Color(red:0.741, green:0.922, blue:0.706))
+                      .ignoresSafeArea(.all)
+           
+            
+            
             NavigationStack {
+                
+
+        NavigationStack{
+            ZStack {
+                Color(red:0.741, green: 0.922, blue: 0.706)
+                    .ignoresSafeArea(.all)
                 VStack {
+                    Text("Welcome to")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    Text("🌿 Greenly!")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+
                     NavigationLink(destination: AboutUsView()) {
-                        Text("About Us")
+                        Text("About Us" )
                             .font(.title3)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.black)
+                            .padding()
+                            .background(Color(red: 0.414, green: 0.769, blue: 0.441))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
                     }
                     NavigationLink(destination: BrandDirectoryView()) {
-                        Text("Brand Directory")
+                        Text("Brand Directory" )
                             .font(.title3)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.black)
+                            .padding()
+                            .background(Color(red: 0.414, green: 0.769, blue: 0.441))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
                     }
                     NavigationLink(destination: HelpView()) {
-                        Text("Help")
+                        Text("Help" )
                             .font(.title3)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.black)
+                            .padding()
+                            .background(Color(red: 0.414, green: 0.769, blue: 0.441))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
+                    
+                    }
+                    }
                     }
                 }
-                .padding()
-                .padding()
-                .padding()
-                .padding()
-                Spacer()
-                
-            
+
+            }
         }
     }
 }
