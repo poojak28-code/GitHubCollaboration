@@ -18,7 +18,8 @@ struct ContentView: View {
                 Color.clear
                     .background(Color(red:0.741, green:0.922, blue:0.706))
                     .ignoresSafeArea(.all)
-                VStack {                Text(textTitle)
+                VStack {
+                    Text(textTitle)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding()
@@ -42,6 +43,13 @@ struct ContentView: View {
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarHidden(true)
                     }
+                    NavigationLink(destination: WelcomeView()) {
+                        Text("sign up")
+                            .navigationTitle("Home")
+                            .navigationBarTitleDisplayMode(.inline)
+                            .navigationBarHidden(true)
+                        }
+                    
                 }
             }
             

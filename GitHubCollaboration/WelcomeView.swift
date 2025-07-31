@@ -17,7 +17,7 @@ struct WelcomeView: View {
                     Text("Welcome to")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                    Text("Greenly!")
+                    Text("🌿 Greenly!")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                     NavigationLink(destination: AboutUsView()) {
