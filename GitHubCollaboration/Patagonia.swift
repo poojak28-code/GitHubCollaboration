@@ -23,7 +23,7 @@ struct Patagonia: View {
                 Text("-Cost:$$ (Middle)")
                     .padding()
                     .padding()
-                Text("-Sustainability: ⭐️⭐️⭐️⭐️/10")
+                Text("-Sustainability: ⭐️⭐️⭐️/5")
                     .padding()
                     .padding()
                 Text("-REEGrow and REECycled are the two main sustainability programs that Reebok has in place, using natural materials and avoiding fossil fuel derived fibers")
