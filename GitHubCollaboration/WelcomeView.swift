@@ -14,13 +14,7 @@ struct WelcomeView: View {
             Color.clear
                       .background(Color(red:0.741, green:0.922, blue:0.706))
                       .ignoresSafeArea(.all)
-            VStack {
-                Text("Welcome to")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                Text("Greenly!")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+           
             
             
             NavigationStack {
@@ -61,6 +55,9 @@ struct WelcomeView: View {
                             .background(Color(red: 0.414, green: 0.769, blue: 0.441))
                             .foregroundColor(.black)
                             .cornerRadius(10)
+                    
+                    }
+                    }
                     }
                 }
 

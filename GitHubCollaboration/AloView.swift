@@ -6,22 +6,20 @@
 //
 
 import SwiftUI
-
 struct AloView: View {
-    var body: some View {
-        VStack {
-            Text("Alo")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-            Text("-Cost: $$$ (Expensive)")
-            Text("-Sustainability: ⭐️⭐️⭐️")
-            Text("-Uses solar energy and eco-friendly packages")
-            Text("Premium athleisure, good material(not fast fashion), and mass produced")
-            Text("Labor Conditions: Claims ethical practices, but not fully verified")
-        }
+  var body: some View {
+    VStack {
+      Text("Alo")
+        .font(.largeTitle)
+        .fontWeight(.semibold)
+      Text("-Cost: $$$ (Expensive)")
+      Text("-Sustainability: :star:️:star:️:star:️")
+      Text("-Uses solar energy and eco-friendly packages")
+      Text("Premium athleisure, good material(not fast fashion), and mass produced")
+      Text("Labor Conditions: Claims ethical practices, but not fully verified")
     }
+  }
 }
-
 #Preview {
-    AloView()
+  AloView()
 }

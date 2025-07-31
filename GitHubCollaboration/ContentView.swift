@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var textTitle = "🌿 Greenly"
@@ -43,30 +43,24 @@ struct ContentView: View {
                             .navigationTitle("Home")
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarHidden(true)
+                        NavigationLink(destination: WelcomeView()) {
+                            Text("sign up")
+                                .navigationTitle("Home")
+                                .navigationBarTitleDisplayMode(.inline)
+                                .navigationBarHidden(true)
                     }
-
+                    
                 }
                 
             }
         }
         
-            
-        }
-    }
-
-
-                    NavigationLink(destination: WelcomeView()) {
-                        Text("sign up")
-                            .navigationTitle("Home")
-                            .navigationBarTitleDisplayMode(.inline)
-                            .navigationBarHidden(true)
-                        }
-                    
-                }
-            }
-            
-        }
         
+    }
+    
+    
+    
+    
     }
 }
 
