@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var textTitle = "🌿 Greenly"
@@ -43,6 +44,17 @@ struct ContentView: View {
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarHidden(true)
                     }
+
+                }
+                
+            }
+        }
+        
+            
+        }
+    }
+
+
                     NavigationLink(destination: WelcomeView()) {
                         Text("sign up")
                             .navigationTitle("Home")
@@ -57,6 +69,7 @@ struct ContentView: View {
         
     }
 }
+
 #Preview {
     ContentView()
 }
