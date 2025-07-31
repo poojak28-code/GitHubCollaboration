@@ -9,57 +9,43 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-            
-            VStack {
-                Text("Welcome to")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                Text("Greenly!")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-            }
-            .padding()
-            .padding()
-            .padding()
-            .padding()
-            Spacer()
-            NavigationStack {
+        NavigationStack{
+            ZStack {
+                Color(red:0.741, green: 0.922, blue: 0.706)
+                    .ignoresSafeArea(.all)
                 VStack {
+                    Text("Welcome to")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    Text("🌿 Greenly!")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
                     NavigationLink(destination: AboutUsView()) {
-                        Button("About Us" ){
-                                        }
-                                        .font(.title3)
-                                        .padding()
-                                        .background(Color(red: 0.414, green: 0.769, blue: 0.441))
-                                        .foregroundColor(.black)
-                                        .cornerRadius(10)
+                        Text("About Us" )
+                            .font(.title3)
+                            .padding()
+                            .background(Color(red: 0.414, green: 0.769, blue: 0.441))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
                     }
                     NavigationLink(destination: BrandDirectoryView()) {
-                        Button("Brand Directory" ){
-                                        }
-                                        .font(.title3)
-                                        .padding()
-                                        .background(Color(red: 0.414, green: 0.769, blue: 0.441))
-                                        .foregroundColor(.black)
-                                        .cornerRadius(10)
+                        Text("Brand Directory" )
+                            .font(.title3)
+                            .padding()
+                            .background(Color(red: 0.414, green: 0.769, blue: 0.441))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
                     }
                     NavigationLink(destination: HelpView()) {
-                        Button("Help" ){
-                                        }
-                                        .font(.title3)
-                                        .padding()
-                                        .background(Color(red: 0.414, green: 0.769, blue: 0.441))
-                                        .foregroundColor(.black)
-                                        .cornerRadius(10)
+                        Text("Help" )
+                            .font(.title3)
+                            .padding()
+                            .background(Color(red: 0.414, green: 0.769, blue: 0.441))
+                            .foregroundColor(.black)
+                            .cornerRadius(10)
                     }
                 }
-                .padding()
-                .padding()
-                .padding()
-                .padding()
-                Spacer()
-                
-            
+            }
         }
     }
 }
